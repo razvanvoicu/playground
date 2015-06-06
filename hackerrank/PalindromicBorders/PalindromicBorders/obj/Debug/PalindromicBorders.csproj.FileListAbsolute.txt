@@ -1,0 +1,6 @@
+C:\w\playground\hackerrank\PalindromicBorders\PalindromicBorders\bin\Debug\PalindromicBorders.exe.config
+C:\w\playground\hackerrank\PalindromicBorders\PalindromicBorders\obj\Debug\PalindromicBorders.csprojResolveAssemblyReference.cache
+C:\w\playground\hackerrank\PalindromicBorders\PalindromicBorders\bin\Debug\PalindromicBorders.exe
+C:\w\playground\hackerrank\PalindromicBorders\PalindromicBorders\bin\Debug\PalindromicBorders.pdb
+C:\w\playground\hackerrank\PalindromicBorders\PalindromicBorders\obj\Debug\PalindromicBorders.exe
+C:\w\playground\hackerrank\PalindromicBorders\PalindromicBorders\obj\Debug\PalindromicBorders.pdb
