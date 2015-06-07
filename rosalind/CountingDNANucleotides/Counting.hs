@@ -36,6 +36,6 @@ main :: IO ()
 main = do
   args <- getArgs
   let fname = case args of
-              []  -> "c:\\Users\\r\\Downloads\\rosalind_dna.txt"
+              []  -> "rosalind_dna.txt"
               h:_ -> h
   putStrLn . freq =<< readFile fname
