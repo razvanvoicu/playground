@@ -1,12 +1,15 @@
 import Control.Monad
 import Data.Functor
 
-fib :: [Integer]
-fib = 1:2: zipWith (+) fib (tail fib)
+getLn = read <$> getLine :: IO Integer
+
+fibs :: [Integer]
+fibs = 1:2: zipWith (+) fibs (tail fibs)
+
+evenFibs = filter even . flip takeWhile fibs . (>)
 
 main = do
-  count <- read <$> getLine :: IO Integer
-  forM_ [1..count] $ \_ -> do
-    limit <- read <$> getLine :: IO Integer
-    putStrLn $ show $ sum $ filter even $ takeWhile (< limit) fib
+  testCount <- fromIntegral <$> getLn
+  testLimits <- replicateM testCount getLn
+  forM testLimits $ print . sum . evenFibs
   
