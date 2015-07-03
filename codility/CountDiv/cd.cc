@@ -1,5 +1,6 @@
 int solution(int A, int B, int K) {
+	B = B - B % K;
 	int q = (B-A) / K ;
-	if ( B % K == 0 ) return q+1;
-	else return q;
+	if ( B < A ) return 0;
+	return q+1;
 }
