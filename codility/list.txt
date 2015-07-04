@@ -1,0 +1,66 @@
+ 1. Time Complexity
+ 		1.1 [01*] TapeEquilibrium
+		1.2 [02*] PermMissingElem
+		1.3 [03*] FrogJmp
+ 2. Counting Elements
+ 		2.1 [04*] FrogRiverOne
+		2.2 [05*] PermCheck
+		2.3 [06*] MissingInteger .
+		2.4 [07*] MaxCounters .
+ 3. Prefix Sums
+		3.1 [08*] PassingCars
+		3.2 [09*] CountDiv .
+		3.3 [10*] GenomicRangeQuery .
+		3.4 [11*] MinAvgTwoSlice .
+ 4. Sorting
+		4.1 [12*] Triangle
+		4.2 [13*] MaxProductOfThree
+		4.3 [14*] Distinct
+		4.4 [15*] NumberOfDiscIntersections .
+ 5. Stacks and Queues
+		5.1 [16*] Nesting
+		5.2 [17*] StoneWall
+		5.3 [18*] Brackets
+		5.4 [19*] Fish
+ 6. Leader
+		6.1 [20*] Dominator
+		6.2 [21*] EquiLeader
+ 7. Maximum slice problem
+		7.1 [22*] MaxSliceSum
+		7.2 [23*] MaxProfit
+		7.3 [24] MaxDoubleSliceSum .
+ 8. Prime and composite numbers
+		8.1 [25*] CountFactors
+		8.2 [26*] MinPerimeterRectangle
+		8.3 [27] Peaks .
+		8.4 [28] Flags ..
+ 9. Sieve of Eratosthenes
+		9.1 [29*] CountSemiprimes
+		9.2 [30] CountNonDivisible .
+10. Euclidean algorithm
+		10.1 [31*] ChocolatesByNumbers
+		10.2 [32] CommonPrimeDivisors .
+11. Fibonacci numbers
+		11.1 [33] Ladder .
+		11.2 [34] FibFrog ..
+12. Binary search algorithm
+		12.1 [35] MinMaxDivision .
+		12.2 [36] NailingPlanks ..
+13. Caterpillar method
+		13.1 [37*] AbsDistinct
+		13.2 [38*] CountDistinctSlices
+		13.3 [39] MinAbsSumOfTwo .
+		13.4 [40] CountTriangles .
+14. Greedy algorithms
+		14.1 [41*] MaxNonoverlappingSegments
+		14.2 [42*] TieRopes 
+15. Dynamic programming
+		15.1 [43] NumberSolitaire .
+		15.2 [44] MinAbsSum ..
+16. Future training
+		16.1 [45*] OddOccurrencesInArray
+		16.2 [46*] StrSymmetryPoint
+		16.3 [47*] TreeHeight
+		16.4 [48*] BinaryGap
+		16.5 [49*] ArrayInversionCount .
+		16.6 [50] PolygonConcavityIndex ..
