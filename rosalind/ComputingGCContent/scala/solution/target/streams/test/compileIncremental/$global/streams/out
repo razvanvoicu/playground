@@ -1,0 +1,40 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(C:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(C:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\w\playground\rosalind\ComputingGCContent\solution\target\scala-2.10\test-classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3fe2c7e4, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\r\.sbt\boot\scala-2.10.4\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\w\playground\rosalind\ComputingGCContent\solution\target\scala-2.10\test-classes;C:\w\playground\rosalind\ComputingGCContent\solution\target\scala-2.10\classes[0m
+[0m[[31merror[0m] [0mC:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala:1: object scalatest is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.scalatest._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0mC:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala:3: not found: type FlatSpec[0m
+[0m[[31merror[0m] [0mclass Test extends FlatSpec with Matchers {[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0mC:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala:3: not found: type Matchers[0m
+[0m[[31merror[0m] [0mclass Test extends FlatSpec with Matchers {[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\w\playground\rosalind\ComputingGCContent\solution\src\test\scala\Test.scala:4: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "test1" should "doSomething" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0mfour errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(test:[31mcompileIncremental[0m) Compilation failed[0m
