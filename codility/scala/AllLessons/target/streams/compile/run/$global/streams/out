@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mRunning ui.Main [0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/r/github/playground/codility/scala/AllLessons/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/r/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/r/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.0-R4.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Glass/Prism Shutdown Hook[0m
+[0m[[0mdebug[0m] [0m	Interrupted Glass/Prism Shutdown Hook[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-3[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
