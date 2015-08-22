@@ -1,4 +1,7 @@
+package rosalind
+
 import java.util.Scanner
+
 import scala.io.Source
 
 object TwoSUM {

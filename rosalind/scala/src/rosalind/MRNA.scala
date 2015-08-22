@@ -1,5 +1,7 @@
-import scala.io.Source
+package rosalind
+
 import scala.collection._
+import scala.io.Source
 
 object MRNA {
   def main(args:Array[String]): Unit = {

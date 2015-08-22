@@ -1,5 +1,8 @@
-import scala.io.Source
+package rosalind
+
 import java.util.Scanner
+
+import scala.io.Source
 
 object INV {
   def main(args: Array[String]): Unit = {

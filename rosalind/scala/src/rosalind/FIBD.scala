@@ -1,3 +1,5 @@
+package rosalind
+
 import java.util.Scanner
 
 import scala.io.Source

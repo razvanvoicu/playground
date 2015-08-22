@@ -1,3 +1,5 @@
+package rosalind
+
 import scala.io.Source
 import scala.util.matching.Regex
 
