@@ -2,9 +2,11 @@ package rosalind
 
 import java.util.Scanner
 
+import ui.SolutionStringToTextField
+
 import scala.io.Source
 
-object CC {
+object CC extends SolutionStringToTextField {
   type EdgeStream = Stream[(Int,Int,Boolean,Boolean)]
 
   def makeEdgeElem(inp:Scanner, flag: Boolean) = if (flag) (inp.nextInt,inp.nextInt,inp.hasNextInt,flag) else (0,0,false,flag)
@@ -14,7 +16,12 @@ object CC {
   }
 
   def main(args:Array[String]): Unit = {
-    val inp = new Scanner(Source.stdin.bufferedReader)
+    val input = Source.stdin.mkString
+    println(solution(input))
+  }
+
+  def solution(input:String):String = {
+    val inp = new Scanner(input)
     val n = inp.nextInt
     inp.nextInt
     val edges = {
@@ -29,6 +36,6 @@ object CC {
     }
     var emptyId = 0
     val components = (1 to n).foldLeft(adj){case (a,_) => mult(a,adj)}.map { s => if (s.isEmpty) {emptyId -= 1; emptyId} else s.min }.toSet
-    println(components.size - 1)
+    (components.size - 1).toString
   }
 }
