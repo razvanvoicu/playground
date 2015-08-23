@@ -2,11 +2,11 @@ package rosalind
 
 import java.util.Scanner
 
-import ui.SolutionStringToTextField
+import ui.SolutionTextAreaToTextField
 
 import scala.io.Source
 
-object CC extends SolutionStringToTextField {
+object CC extends SolutionTextAreaToTextField {
   type EdgeStream = Stream[(Int,Int,Boolean,Boolean)]
 
   def makeEdgeElem(inp:Scanner, flag: Boolean) = if (flag) (inp.nextInt,inp.nextInt,inp.hasNextInt,flag) else (0,0,false,flag)

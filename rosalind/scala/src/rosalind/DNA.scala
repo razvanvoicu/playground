@@ -1,10 +1,10 @@
 package rosalind
 
-import ui.SolutionStringToTextField
+import ui.SolutionTextAreaToTextField
 
 import scala.io.Source
 
-object DNA extends SolutionStringToTextField {
+object DNA extends SolutionTextAreaToTextField {
 
   def solution(inp:String) : String = "ACGT".map(c => inp.filter(_ == c).length).mkString(" ")
 

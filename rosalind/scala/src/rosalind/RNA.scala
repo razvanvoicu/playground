@@ -1,10 +1,10 @@
 package rosalind
 
-import ui.SolutionStringToTextArea
+import ui.SolutionTextAreaToTextArea
 
 import scala.io.Source
 
-object RNA extends SolutionStringToTextArea {
+object RNA extends SolutionTextAreaToTextArea {
   def solution(inp:String) : String = inp.replace('T','U')
 
   def main(args: Array[String]) : Unit = {

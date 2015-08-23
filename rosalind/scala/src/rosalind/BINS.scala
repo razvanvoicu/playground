@@ -2,11 +2,11 @@ package rosalind
 
 import java.util.Scanner
 
-import ui.SolutionStringToTextArea
+import ui.SolutionTextAreaToTextArea
 
 import scala.io.Source
 
-object BINS extends SolutionStringToTextArea {
+object BINS extends SolutionTextAreaToTextArea {
   def main(args: Array[String]) : Unit = {
     val inp = Source.stdin.getLines().mkString("\n")
     println(solution(inp))

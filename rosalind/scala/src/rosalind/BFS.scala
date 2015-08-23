@@ -2,11 +2,11 @@ package rosalind
 
 import java.util.Scanner
 
-import ui.SolutionStringToTextArea
+import ui.SolutionTextAreaToTextArea
 
 import scala.io.Source
 
-object BFS extends SolutionStringToTextArea {
+object BFS extends SolutionTextAreaToTextArea {
   def readEdges(inp:Scanner): Stream[(Int, Int)] = {
     def makeElem(h: Boolean) = if (h) (inp.nextInt, inp.nextInt, inp.hasNextInt, h) else (0, 0, false, h)
     lazy val edges: Stream[(Int, Int, Boolean, Boolean)] = makeElem(true) #:: edges.map { case (_, _, h, _) => makeElem(h) }

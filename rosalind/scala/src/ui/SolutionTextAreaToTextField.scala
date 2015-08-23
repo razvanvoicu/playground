@@ -3,7 +3,7 @@ package ui
 import javafx.scene.control._
 import javafx.scene.layout.Pane
 
-trait SolutionStringToTextField extends HasView with StringToTextLayout {
+trait SolutionTextAreaToTextField extends HasView with StringToTextLayout {
   def solution(inp:String) : String
 
   override def view(title:String): Pane = {
