@@ -3,7 +3,7 @@ package ui
 import javafx.application.Platform
 import javafx.event.{ActionEvent, EventHandler}
 import javafx.geometry.{Pos, Insets}
-import javafx.scene.control.{Button, Label, TextInputControl}
+import javafx.scene.control._
 import javafx.scene.input.{KeyCode, KeyEvent}
 import javafx.scene.layout.{HBox, VBox}
 
@@ -36,22 +36,28 @@ trait StringToTextLayout {
         val resultFuture = Future{
           solution(inputBox.getText)
         }
+        def restoreUI: Unit = {
+          submit.setDisable(false)
+          inputBox.setDisable(false)
+          output.setText("Output:")
+        }
         resultFuture.onComplete{
           case Success(v) => Platform.runLater(new Runnable{
             override def run(): Unit = {
               outBox.setText(solution(inputBox.getText))
-              submit.setDisable(false)
-              inputBox.setDisable(false)
-              output.setText("Output:")
+              restoreUI
             }
           })
-          case _ => println("future failed")
+          case _ =>
+            outBox.setText("Computation failed")
+            restoreUI
         }
       }
     })
     inputBox.setOnKeyPressed(new EventHandler[KeyEvent]{
-      override def handle(event: KeyEvent): Unit = () match {
-        case _ if event.getCode == KeyCode.ENTER => submit.fire()
+      override def handle(event: KeyEvent): Unit = event.getSource match {
+        case _ : TextField if event.getCode == KeyCode.ENTER => submit.fire()
+        case _ : TextArea if event.getCode == KeyCode.ENTER && event.isControlDown => submit.fire()
         case _ => outBox.setText("")
       }
     })
