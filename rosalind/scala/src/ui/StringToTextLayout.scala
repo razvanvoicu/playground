@@ -36,21 +36,17 @@ trait StringToTextLayout {
         val resultFuture = Future{
           solution(inputBox.getText)
         }
-        def restoreUI: Unit = {
-          submit.setDisable(false)
-          inputBox.setDisable(false)
-          output.setText("Output:")
-        }
+        def updateOutbox(out:String): Unit = Platform.runLater(new Runnable{
+          override def run(): Unit = {
+            outBox.setText(out)
+            submit.setDisable(false)
+            inputBox.setDisable(false)
+            output.setText("Output:")
+          }
+        })
         resultFuture.onComplete{
-          case Success(v) => Platform.runLater(new Runnable{
-            override def run(): Unit = {
-              outBox.setText(solution(inputBox.getText))
-              restoreUI
-            }
-          })
-          case _ =>
-            outBox.setText("Computation failed")
-            restoreUI
+          case Success(v) => updateOutbox(solution(inputBox.getText))
+          case _ => updateOutbox("Computation failed; invalid input?")
         }
       }
     })
